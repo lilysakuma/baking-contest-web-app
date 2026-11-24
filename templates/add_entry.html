@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Baking Contest Entry</title>
+</head>
+<body>
+    <h2>Add New Baking Contest Entry</h2>
+
+    <form action="/add_entry" method="POST">
+        <p>
+            Name of User:
+            <input type="text" name="username">
+        </p>
+
+        <p>
+            Name of Baking Item:
+            <input type="text" name="item">
+        </p>
+
+        <p>
+            Number of Excellent Votes:
+            <input type="text" name="excellent">
+        </p>
+
+        <p>
+            Number of OK Votes:
+            <input type="text" name="ok">
+        </p>
+
+        <p>
+            Number of Bad Votes:
+            <input type="text" name="bad">
+        </p>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>

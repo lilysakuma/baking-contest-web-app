@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baking Contest Users</title>
+    </head>
+<body>
+    <h2>List Baking Contest Users</h2>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Phone Number</th>
+            <th>Security Level</th>
+            <th>Login Password</th>
+        </tr>
+
+        {% for user in users %}
+        <tr>
+            <td>{{user[0]}}</td>
+            <td>{{user[1]}}</td>
+            <td>{{user[2]}}</td>
+            <td>{{user[3]}}</td>
+            <td>{{user[4]}}</td>
+        </tr>
+        {%endfor %}
+    </table>
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>

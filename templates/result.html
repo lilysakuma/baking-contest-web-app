@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h2>Query Result</h2>
+
+    {% for line in msg.split('\n') %}
+        <p>{{ line }}</p>
+    {% endfor %}
+
+    <p> <a href="/">Back to Home</a></p>
+</body>
+</html>
